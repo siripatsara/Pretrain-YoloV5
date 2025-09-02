@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "C:\university\241-353\T.Fern\program\yolov5\train_tensor.py", line 1145, in <module>
+    main(opt)
+  File "C:\university\241-353\T.Fern\program\yolov5\train_tensor.py", line 820, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "C:\university\241-353\T.Fern\program\yolov5\train_tensor.py", line 213, in train
+    data_dict = data_dict or check_dataset(data)  # check if None
+                             ^^^^^^^^^^^^^^^^^^^
+  File "C:\university\241-353\T.Fern\program\yolov5\utils\general.py", line 536, in check_dataset
+    assert k in data, emojis(f"data.yaml '{k}:' field missing ❌")
+           ^^^^^^^^^
+AssertionError: data.yaml 'val:' field missing

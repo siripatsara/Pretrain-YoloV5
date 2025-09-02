@@ -1,0 +1,179 @@
+_wandb:
+    value:
+        cli_version: 0.21.0
+        e:
+            usjrgwvloy4d2nifg64w1oow2xyn4chi:
+                args:
+                    - --data
+                    - dataset/BoundingBox/data.yaml
+                    - --weights
+                    - yolov5s.pt
+                    - --epochs
+                    - "100"
+                    - --batch-size
+                    - "8"
+                codePath: train_tensor.py
+                codePathLocal: train_tensor.py
+                cpu_count: 12
+                cpu_count_logical: 16
+                cudaVersion: "12.6"
+                disk:
+                    /:
+                        total: "458685935616"
+                        used: "362439532544"
+                email: siripatsara6@gmail.com
+                executable: C:\university\241-353\T.Fern\program\.venv\Scripts\python.exe
+                git:
+                    commit: 79c4c31d16692e188fb30de92f81f005b5b4f6c0
+                    remote: https://github.com/ultralytics/yolov5.git
+                gpu: NVIDIA GeForce RTX 3050 Ti Laptop GPU
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 2560
+                      memoryTotal: "4294967296"
+                      name: NVIDIA GeForce RTX 3050 Ti Laptop GPU
+                      uuid: GPU-583c4ac0-69fe-034b-6ad4-d905ad483a1e
+                host: acer-Nitro5
+                memory:
+                    total: "25459941376"
+                os: Windows-10-10.0.26100-SP0
+                program: C:\university\241-353\T.Fern\program\yolov5\train_tensor.py
+                python: CPython 3.11.2
+                root: C:\university\241-353\T.Fern\program\yolov5
+                startedAt: "2025-08-08T03:30:25.043857Z"
+                writerId: usjrgwvloy4d2nifg64w1oow2xyn4chi
+        m: []
+        python_version: 3.11.2
+        t:
+            "1":
+                - 1
+                - 41
+            "2":
+                - 1
+                - 41
+            "3":
+                - 2
+                - 16
+                - 62
+            "4": 3.11.2
+            "5": 0.21.0
+            "8":
+                - 3
+            "12": 0.21.0
+            "13": windows-amd64
+artifact_alias:
+    value: latest
+batch_size:
+    value: 8
+bbox_interval:
+    value: -1
+bucket:
+    value: ""
+cache:
+    value: null
+cfg:
+    value: ""
+cos_lr:
+    value: false
+data:
+    value: dataset/BoundingBox/data.yaml
+device:
+    value: ""
+entity:
+    value: null
+epochs:
+    value: 100
+evolve:
+    value: null
+evolve_population:
+    value: data\hyps
+exist_ok:
+    value: false
+freeze:
+    value:
+        - 0
+hyp:
+    value:
+        anchor_t: 4
+        box: 0.05
+        cls: 0.5
+        cls_pw: 1
+        copy_paste: 0
+        degrees: 0
+        fl_gamma: 0
+        fliplr: 0.5
+        flipud: 0
+        hsv_h: 0.015
+        hsv_s: 0.7
+        hsv_v: 0.4
+        iou_t: 0.2
+        lr0: 0.01
+        lrf: 0.01
+        mixup: 0
+        momentum: 0.937
+        mosaic: 1
+        obj: 1
+        obj_pw: 1
+        perspective: 0
+        scale: 0.5
+        shear: 0
+        translate: 0.1
+        warmup_bias_lr: 0.1
+        warmup_epochs: 3
+        warmup_momentum: 0.8
+        weight_decay: 0.0005
+image_weights:
+    value: false
+imgsz:
+    value: 640
+label_smoothing:
+    value: 0
+local_rank:
+    value: -1
+multi_scale:
+    value: false
+name:
+    value: exp
+ndjson_console:
+    value: false
+ndjson_file:
+    value: false
+noautoanchor:
+    value: false
+noplots:
+    value: false
+nosave:
+    value: false
+noval:
+    value: false
+optimizer:
+    value: SGD
+patience:
+    value: 100
+project:
+    value: runs\train
+quad:
+    value: false
+rect:
+    value: false
+resume:
+    value: false
+resume_evolve:
+    value: null
+save_dir:
+    value: runs\train\exp5
+save_period:
+    value: -1
+seed:
+    value: 0
+single_cls:
+    value: false
+sync_bn:
+    value: false
+upload_dataset:
+    value: false
+weights:
+    value: yolov5s.pt
+workers:
+    value: 8

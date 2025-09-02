@@ -1,0 +1,12 @@
+{"time":"2025-08-07T18:35:39.5750805+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-08-07T18:35:40.0729751+07:00","level":"INFO","msg":"stream: created new stream","id":"efr235vm"}
+{"time":"2025-08-07T18:35:40.0736563+07:00","level":"INFO","msg":"stream: started","id":"efr235vm"}
+{"time":"2025-08-07T18:35:40.0736563+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"efr235vm"}
+{"time":"2025-08-07T18:35:40.0736563+07:00","level":"INFO","msg":"handler: started","stream_id":"efr235vm"}
+{"time":"2025-08-07T18:35:40.0736563+07:00","level":"INFO","msg":"sender: started","stream_id":"efr235vm"}
+{"time":"2025-08-07T18:35:41.212811+07:00","level":"INFO","msg":"stream: closing","id":"efr235vm"}
+{"time":"2025-08-07T18:35:42.7812124+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-07T18:35:43.1803718+07:00","level":"INFO","msg":"handler: closed","stream_id":"efr235vm"}
+{"time":"2025-08-07T18:35:43.1803718+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"efr235vm"}
+{"time":"2025-08-07T18:35:43.1803718+07:00","level":"INFO","msg":"sender: closed","stream_id":"efr235vm"}
+{"time":"2025-08-07T18:35:43.1809762+07:00","level":"INFO","msg":"stream: closed","id":"efr235vm"}

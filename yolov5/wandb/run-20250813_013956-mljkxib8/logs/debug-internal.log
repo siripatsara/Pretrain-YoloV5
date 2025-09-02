@@ -1,0 +1,11 @@
+{"time":"2025-08-13T01:39:57.2349396+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-08-13T01:39:58.3158671+07:00","level":"INFO","msg":"stream: created new stream","id":"mljkxib8"}
+{"time":"2025-08-13T01:39:58.3158671+07:00","level":"INFO","msg":"stream: started","id":"mljkxib8"}
+{"time":"2025-08-13T01:39:58.3158671+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"mljkxib8"}
+{"time":"2025-08-13T01:39:58.3158671+07:00","level":"INFO","msg":"handler: started","stream_id":"mljkxib8"}
+{"time":"2025-08-13T01:39:58.3158671+07:00","level":"INFO","msg":"sender: started","stream_id":"mljkxib8"}
+{"time":"2025-08-13T05:04:46.3555702+07:00","level":"WARN","msg":"sender: taking a long time","seconds":10798.2032948,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true mailbox_slot:\"dfnu4ltehga5\" connection_id:\"1(127.0.0.1:2509)\")"}
+{"time":"2025-08-13T05:04:46.4593584+07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-08-13T05:04:46.4593584+07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/siripatsara6/train/mljkxib8/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-13T05:04:49.3208512+07:00","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":10802.0105739,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true mailbox_slot:\"dfnu4ltehga5\" connection_id:\"1(127.0.0.1:2509)\")"}
+{"time":"2025-08-13T05:46:31.1787903+07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/siripatsara6/train/mljkxib8/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}

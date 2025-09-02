@@ -1,0 +1,13 @@
+
+Dataset not found , missing paths ['C:\\university\\241-353\\T.Fern\\program\\yolov5\\dataset\\BoundingBox\\val.txt']
+Traceback (most recent call last):
+  File "C:\university\241-353\T.Fern\program\yolov5\train.py", line 987, in <module>
+    main(opt)
+  File "C:\university\241-353\T.Fern\program\yolov5\train.py", line 689, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "C:\university\241-353\T.Fern\program\yolov5\train.py", line 203, in train
+    data_dict = data_dict or check_dataset(data)  # check if None
+                             ^^^^^^^^^^^^^^^^^^^
+  File "C:\university\241-353\T.Fern\program\yolov5\utils\general.py", line 564, in check_dataset
+    raise Exception("Dataset not found ❌")
+Exception: Dataset not found ❌

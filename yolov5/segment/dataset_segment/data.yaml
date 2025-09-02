@@ -1,0 +1,8 @@
+train: dataset_segment/train.txt
+val: dataset_segment/val.txt
+nc: 3
+names:
+  0: Protien
+  1: Vegetable
+  2: Carb
+

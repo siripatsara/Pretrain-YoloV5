@@ -1,0 +1,13 @@
+{"time":"2025-08-08T01:11:50.7652968+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-08-08T01:11:51.2892477+07:00","level":"INFO","msg":"stream: created new stream","id":"rhcwramp"}
+{"time":"2025-08-08T01:11:51.2892477+07:00","level":"INFO","msg":"stream: started","id":"rhcwramp"}
+{"time":"2025-08-08T01:11:51.2892477+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"rhcwramp"}
+{"time":"2025-08-08T01:11:51.2892477+07:00","level":"INFO","msg":"handler: started","stream_id":"rhcwramp"}
+{"time":"2025-08-08T01:11:51.2892477+07:00","level":"INFO","msg":"sender: started","stream_id":"rhcwramp"}
+{"time":"2025-08-08T01:18:14.3318225+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run_rhcwramp_model","runtime_seconds":1.1395855},{"desc":"uploading media\\images\\Results_50_697a14f222c478dc47b6.png","runtime_seconds":0.80043,"progress":"144.0KB/253.6KB"},{"desc":"uploading media\\images\\Results_50_98c407ab5c36197837da.png","runtime_seconds":0.80043,"progress":"144.0KB/202.4KB"},{"desc":"uploading media\\images\\Validation_50_a4a8acd6d6a998fe120b.jpg","runtime_seconds":0.80043,"progress":"464.0KB/633.5KB"},{"desc":"uploading media\\images\\Validation_50_bb5fa64c4bd2681d3d95.jpg","runtime_seconds":0.80043,"progress":"336.0KB/603.2KB"},{"desc":"uploading media\\images\\Results_50_90857c23881711c77725.png","runtime_seconds":0.80043,"progress":"324.4KB/324.4KB"},{"desc":"uploading media\\images\\Results_50_8d69fb947bf872f8ff43.png","runtime_seconds":0.80043,"progress":"211.1KB/211.1KB"},{"desc":"uploading media\\images\\Results_50_6b10bd30a4f27700f832.png","runtime_seconds":0.7666048,"progress":"112.0KB/289.8KB"},{"desc":"uploading media\\images\\Results_50_14aa714e1ceebf698aeb.png","runtime_seconds":0.7666048,"progress":"160.0KB/219.3KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.6907552,"progress":"2.0KB/2.0KB"}],"total_operations":12}}
+{"time":"2025-08-08T01:18:20.3815013+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-08T01:18:20.8025772+07:00","level":"INFO","msg":"stream: closing","id":"rhcwramp"}
+{"time":"2025-08-08T01:18:20.8030832+07:00","level":"INFO","msg":"sender: closed","stream_id":"rhcwramp"}
+{"time":"2025-08-08T01:18:20.8030832+07:00","level":"INFO","msg":"handler: closed","stream_id":"rhcwramp"}
+{"time":"2025-08-08T01:18:20.8030832+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"rhcwramp"}
+{"time":"2025-08-08T01:18:20.8030832+07:00","level":"INFO","msg":"stream: closed","id":"rhcwramp"}

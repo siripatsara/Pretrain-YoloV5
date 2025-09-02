@@ -1,0 +1,150 @@
+Overriding model.yaml nc=80 with nc=16
+
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Conv                      [3, 32, 6, 2, 2]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  2    115712  models.common.C3                        [128, 128, 2]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  3    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1   1182720  models.common.C3                        [512, 512, 1]
+  9                -1  1    656896  models.common.SPPF                      [512, 512, 5]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    361984  models.common.C3                        [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 24      [17, 20, 23]  1     56637  models.yolo.Detect                      [16, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+Model summary: 214 layers, 7062781 parameters, 7062781 gradients, 16.1 GFLOPs
+
+Transferred 343/349 items from yolov5s.pt
+C:\university\241-353\T.Fern\program\yolov5\models\common.py:906: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(autocast):
+C:\university\241-353\T.Fern\program\yolov5\models\common.py:906: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(autocast):
+[34m[1mAMP: [0mchecks passed
+[34m[1moptimizer:[0m SGD(lr=0.01) with parameter groups 57 weight(decay=0.0), 60 weight(decay=0.0005), 60 bias
+[34m[1mtrain: [0mScanning C:\university\241-353\T.Fern\program\yolov5\dataset\Bound[0m
+[34m[1mtrain: [0mWARNING  images\train\Food_1.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_1.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_10.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_10.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_100.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_100.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_103.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_103.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_104.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_104.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_105.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_105.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_106.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_106.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_107.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_107.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_108.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_108.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_11.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_11.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_112.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_112.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_113.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_113.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_115.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_115.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_116.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_116.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_117.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_117.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_118.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_118.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_119.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_119.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_12.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_12.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_120.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_120.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_121.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_121.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_122.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_122.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_16.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_16.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_18.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_18.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_19.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_19.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_2.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_2.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_21.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_21.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_22.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_22.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_23.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_23.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_24.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_24.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_25.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_25.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_26.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_26.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_27.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_27.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_28.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_28.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_29.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_29.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_3.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_3.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_30.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_30.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_31.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_31.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_32.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_32.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_33.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_33.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_34.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_34.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_35.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_35.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_36.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_36.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_37.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_37.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_39.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_39.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_4.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_4.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_40.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_40.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_41.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_41.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_42.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_42.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_43.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_43.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_44.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_44.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_45.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_45.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_46.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_46.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_48.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_48.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_49.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_49.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_5.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_5.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_50.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_50.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_52.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_52.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_54.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_54.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_55.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_55.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_56.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_56.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_58.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_58.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_6.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_6.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_60.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_60.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_61.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_61.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_63.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_63.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_64.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_64.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_65.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_65.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_66.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_66.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_68.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_68.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_69.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_69.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_7.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_7.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_70.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_70.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_71.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_71.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_72.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_72.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_73.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_73.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_75.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_75.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_76.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_76.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_77.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_77.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_78.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_78.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_79.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_79.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_8.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_8.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_80.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_80.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_81.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_81.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_82.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_82.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_84.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_84.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_85.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_85.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_86.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_86.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_88.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_88.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_89.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_89.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_9.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_9.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_90.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_90.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_92.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_92.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_93.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_93.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_94.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_94.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_95.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_95.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_98.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_98.png'
+[34m[1mtrain: [0mWARNING  images\train\Food_99.png: ignoring corrupt image/label: [Errno 2] No such file or directory: 'images\\train\\Food_99.png'
+Traceback (most recent call last):
+  File "C:\university\241-353\T.Fern\program\yolov5\train.py", line 987, in <module>
+    main(opt)
+  File "C:\university\241-353\T.Fern\program\yolov5\train.py", line 689, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "C:\university\241-353\T.Fern\program\yolov5\train.py", line 285, in train
+    train_loader, dataset = create_dataloader(
+                            ^^^^^^^^^^^^^^^^^^
+  File "C:\university\241-353\T.Fern\program\yolov5\utils\dataloaders.py", line 184, in create_dataloader
+    dataset = LoadImagesAndLabels(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\university\241-353\T.Fern\program\yolov5\utils\dataloaders.py", line 611, in __init__
+    assert nf > 0 or not augment, f"{prefix}No labels found in {cache_path}, can not start training. {HELP_URL}"
+           ^^^^^^
+AssertionError: [34m[1mtrain: [0mNo labels found in C:\university\241-353\T.Fern\program\yolov5\dataset\BoundingBox\train.cache, can not start training. See https://docs.ultralytics.com/yolov5/tutorials/train_custom_data

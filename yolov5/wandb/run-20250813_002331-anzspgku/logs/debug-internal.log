@@ -1,0 +1,13 @@
+{"time":"2025-08-13T00:23:32.0194493+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-08-13T00:23:32.6090135+07:00","level":"INFO","msg":"stream: created new stream","id":"anzspgku"}
+{"time":"2025-08-13T00:23:32.6090135+07:00","level":"INFO","msg":"stream: started","id":"anzspgku"}
+{"time":"2025-08-13T00:23:32.6095239+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"anzspgku"}
+{"time":"2025-08-13T00:23:32.6095239+07:00","level":"INFO","msg":"handler: started","stream_id":"anzspgku"}
+{"time":"2025-08-13T00:23:32.6095239+07:00","level":"INFO","msg":"sender: started","stream_id":"anzspgku"}
+{"time":"2025-08-13T00:42:52.102111+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run_anzspgku_model","runtime_seconds":1.2741213},{"desc":"uploading media\\images\\Validation_180_6cf3506dee15b5eaa9e3.jpg","runtime_seconds":0.9062438,"progress":"352.0KB/662.1KB"},{"desc":"uploading media\\images\\Validation_180_a8d3e6afdd48bf88893a.jpg","runtime_seconds":0.9062438,"progress":"673.6KB/673.6KB"},{"desc":"uploading media\\images\\Results_180_7e651423b506b25db273.png","runtime_seconds":0.8361613,"progress":"181.8KB/181.8KB"},{"desc":"uploading media\\images\\Results_180_7f98871fdbb89c50ab75.png","runtime_seconds":0.8361613,"progress":"142.0KB/142.0KB"},{"desc":"uploading media\\images\\Results_180_30bd45cd6bd142e672eb.png","runtime_seconds":0.8361613,"progress":"288.3KB/288.3KB"},{"desc":"uploading media\\images\\Results_180_d5e98cf9daabae120f59.png","runtime_seconds":0.8361613,"progress":"112.9KB/112.9KB"},{"desc":"uploading media\\images\\Results_180_ca71a57cec34cedf4956.png","runtime_seconds":0.8361613,"progress":"154.3KB/154.3KB"},{"desc":"uploading media\\images\\Results_180_9098a8efae488750b7c0.png","runtime_seconds":0.8361613,"progress":"139.5KB/139.5KB"},{"desc":"uploading output.log","runtime_seconds":0.6906113,"progress":"240.0KB/513.0KB"}],"total_operations":11}}
+{"time":"2025-08-13T00:42:58.340268+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-13T00:42:58.8714245+07:00","level":"INFO","msg":"stream: closing","id":"anzspgku"}
+{"time":"2025-08-13T00:42:58.8719436+07:00","level":"INFO","msg":"sender: closed","stream_id":"anzspgku"}
+{"time":"2025-08-13T00:42:58.8719436+07:00","level":"INFO","msg":"handler: closed","stream_id":"anzspgku"}
+{"time":"2025-08-13T00:42:58.8719436+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"anzspgku"}
+{"time":"2025-08-13T00:42:58.872505+07:00","level":"INFO","msg":"stream: closed","id":"anzspgku"}

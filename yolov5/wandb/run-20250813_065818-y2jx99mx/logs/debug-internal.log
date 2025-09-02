@@ -1,0 +1,14 @@
+{"time":"2025-08-13T06:58:18.8248172+07:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-08-13T06:58:19.2994227+07:00","level":"INFO","msg":"stream: created new stream","id":"y2jx99mx"}
+{"time":"2025-08-13T06:58:19.2994227+07:00","level":"INFO","msg":"stream: started","id":"y2jx99mx"}
+{"time":"2025-08-13T06:58:19.2994227+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"y2jx99mx"}
+{"time":"2025-08-13T06:58:19.3000727+07:00","level":"INFO","msg":"handler: started","stream_id":"y2jx99mx"}
+{"time":"2025-08-13T06:58:19.2994227+07:00","level":"INFO","msg":"sender: started","stream_id":"y2jx99mx"}
+{"time":"2025-08-13T07:12:30.4501862+07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/siripatsara6/train/y2jx99mx/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-13T07:44:44.7525804+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run_y2jx99mx_model","runtime_seconds":1.1420214},{"desc":"uploading media\\images\\Results_150_19a6de67d91374d62a55.png","runtime_seconds":0.8223697,"progress":"114.0KB/114.0KB"},{"desc":"uploading media\\images\\Results_150_6331d40a8c682ac2c6d0.png","runtime_seconds":0.8223697,"progress":"161.2KB/161.2KB"},{"desc":"uploading media\\images\\Results_150_779aa90b64bdf7d356d0.png","runtime_seconds":0.8223697,"progress":"148.7KB/148.7KB"},{"desc":"uploading media\\images\\Results_150_87e650a62dc9fbc4325d.png","runtime_seconds":0.8223697,"progress":"181.9KB/181.9KB"},{"desc":"uploading media\\images\\Results_150_8ae8d20f831f04344585.png","runtime_seconds":0.8223697,"progress":"145.8KB/145.8KB"},{"desc":"uploading media\\images\\Validation_150_6cf3506dee15b5eaa9e3.jpg","runtime_seconds":0.8223697,"progress":"224.0KB/662.1KB"},{"desc":"uploading media\\images\\Validation_150_340b888408de7959e60b.jpg","runtime_seconds":0.8223697,"progress":"256.0KB/680.9KB"},{"desc":"uploading media\\images\\Results_150_4a5418c63f5181eab507.png","runtime_seconds":0.8223697,"progress":"301.5KB/301.5KB"},{"desc":"uploading output.log","runtime_seconds":0.6737786,"progress":"176.0KB/211.9KB"}],"total_operations":12}}
+{"time":"2025-08-13T07:44:50.2727175+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-13T07:44:50.6574061+07:00","level":"INFO","msg":"stream: closing","id":"y2jx99mx"}
+{"time":"2025-08-13T07:44:50.658272+07:00","level":"INFO","msg":"handler: closed","stream_id":"y2jx99mx"}
+{"time":"2025-08-13T07:44:50.658272+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"y2jx99mx"}
+{"time":"2025-08-13T07:44:50.658272+07:00","level":"INFO","msg":"sender: closed","stream_id":"y2jx99mx"}
+{"time":"2025-08-13T07:44:50.658272+07:00","level":"INFO","msg":"stream: closed","id":"y2jx99mx"}

@@ -1,0 +1,190 @@
+Overriding model.yaml nc=80 with nc=3
+
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Conv                      [3, 32, 6, 2, 2]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  2    115712  models.common.C3                        [128, 128, 2]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  3    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1   1182720  models.common.C3                        [512, 512, 1]
+  9                -1  1    656896  models.common.SPPF                      [512, 512, 5]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    361984  models.common.C3                        [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 24      [17, 20, 23]  1     21576  models.yolo.Detect                      [3, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+Model summary: 214 layers, 7027720 parameters, 7027720 gradients, 16.0 GFLOPs
+
+Transferred 343/349 items from yolov5s.pt
+C:\university\241-353\T.Fern\program\yolov5\models\common.py:906: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(autocast):
+C:\university\241-353\T.Fern\program\yolov5\models\common.py:906: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(autocast):
+[34m[1mAMP: [0mchecks passed
+[34m[1moptimizer:[0m SGD(lr=0.01) with parameter groups 57 weight(decay=0.0), 60 weight(decay=0.0005), 60 bias
+[34m[1mtrain: [0mScanning C:\university\241-353\T.Fern\program\yolov5\dataset_BB\total\train.cache... 102 images, 0 background[0m
+[34m[1mval: [0mScanning C:\university\241-353\T.Fern\program\yolov5\dataset_BB\total\val.cache... 26 images, 0 backgrounds, 0 [0m
+
+[34m[1mAutoAnchor: [0m5.22 anchors/target, 0.999 Best Possible Recall (BPR). Current anchors are a good fit to dataset
+Plotting labels to runs\train\exp18\labels.jpg...
+[Errno 2] No such file or directory: 'runs\\train\\exp18\\labels_correlogram.jpg'
+C:\university\241-353\T.Fern\program\yolov5\train_tensor.py:387: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=amp)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mruns\train\exp18[0m
+Starting training for 150 epochs...
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+  0%|          | 0/4 [00:00<?, ?it/s]C:\university\241-353\T.Fern\program\yolov5\train_tensor.py:459: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+      0/149      6.88G     0.1216     0.1203    0.04057        913        640:   0%|          | 0/4 [00:09<?, ?it/s]Exception in thread Thread-15 (plot_images):
+Traceback (most recent call last):
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 975, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\university\241-353\T.Fern\program\yolov5\utils\plots.py", line 213, in plot_images
+    annotator.im.save(fname)  # save
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\PIL\Image.py", line 2576, in save
+    fp = builtins.open(filename, "w+b")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'runs\\train\\exp18\\train_batch0.jpg'
+      0/149      6.88G     0.1216     0.1203    0.04057        913        640:  25%|██▌       | 1/4 [00:12<00:36, 12Exception in thread Thread-10:
+Traceback (most recent call last):
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\summary\writer\event_file_writer.py", line 244, in run
+C:\university\241-353\T.Fern\program\yolov5\train_tensor.py:459: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+    self._run()
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\summary\writer\event_file_writer.py", line 275, in _run
+    self._record_writer.write(data)
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\summary\writer\record_writer.py", line 40, in write
+    self._writer.write(header + header_crc + data + footer_crc)
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\compat\tensorflow_stub\io\gfile.py", line 775, in write
+    self.fs.append(self.filename, file_content, self.binary_mode)
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\compat\tensorflow_stub\io\gfile.py", line 167, in append
+    self._write(filename, file_content, "ab" if binary_mode else "a")
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\compat\tensorflow_stub\io\gfile.py", line 171, in _write
+    with io.open(filename, mode, encoding=encoding) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: b'runs\\train\\exp18\\events.out.tfevents.1755042360.acer-Nitro5.19212.1'
+      0/149      6.92G     0.1204     0.1173    0.04064        755        640:  50%|█████     | 2/4 [00:17<00:16,  8C:\university\241-353\T.Fern\program\yolov5\train_tensor.py:459: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+Exception in thread Thread-16 (plot_images):
+Traceback (most recent call last):
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 975, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\university\241-353\T.Fern\program\yolov5\utils\plots.py", line 213, in plot_images
+    annotator.im.save(fname)  # save
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\PIL\Image.py", line 2576, in save
+    fp = builtins.open(filename, "w+b")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'runs\\train\\exp18\\train_batch1.jpg'
+      0/149      6.92G     0.1205     0.1173    0.04052        885        640:  75%|███████▌  | 3/4 [00:22<00:06,  6C:\university\241-353\T.Fern\program\yolov5\train_tensor.py:459: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+Exception in thread Thread-17 (plot_images):
+Traceback (most recent call last):
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 975, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\university\241-353\T.Fern\program\yolov5\utils\plots.py", line 213, in plot_images
+    annotator.im.save(fname)  # save
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\PIL\Image.py", line 2576, in save
+    fp = builtins.open(filename, "w+b")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'runs\\train\\exp18\\train_batch2.jpg'
+      0/149      6.92G     0.1204     0.1097    0.04065        114        640: 100%|██████████| 4/4 [00:23<00:00,  5
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 1/1 [00:0
+                   all         26        443    0.00509     0.0907    0.00299   0.000713
+Exception in thread Thread-9:
+Traceback (most recent call last):
+  File "C:\university\241-353\T.Fern\program\yolov5\train_tensor.py", line 1145, in <module>
+    main(opt)
+  File "C:\university\241-353\T.Fern\program\yolov5\train_tensor.py", line 820, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "C:\university\241-353\T.Fern\program\yolov5\train_tensor.py", line 548, in train
+    writer.add_scalar(
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\torch\utils\tensorboard\writer.py", line 381, in add_scalar
+    self._get_file_writer().add_summary(summary, global_step, walltime)
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\torch\utils\tensorboard\writer.py", line 115, in add_summary
+    self.add_event(event, global_step, walltime)
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\torch\utils\tensorboard\writer.py", line 99, in add_event
+Traceback (most recent call last):
+    self.event_writer.add_event(event)
+  File "C:\university\241-353\T.Fern\program\yolov5\train_tensor.py", line 1145, in <module>
+    main(opt)
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\summary\writer\event_file_writer.py", line 117, in add_event
+    self._async_writer.write(event.SerializeToString())  File "C:\university\241-353\T.Fern\program\yolov5\train_tensor.py", line 820, in main
+    train(opt.hyp, opt, device, callbacks)
+
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\summary\writer\event_file_writer.py", line 178, in write
+  File "C:\university\241-353\T.Fern\program\yolov5\train_tensor.py", line 548, in train
+    writer.add_scalar(
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\torch\utils\tensorboard\writer.py", line 381, in add_scalar
+    self._get_file_writer().add_summary(summary, global_step, walltime)
+    self._check_worker_status()  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\torch\utils\tensorboard\writer.py", line 115, in add_summary
+    self.add_event(event, global_step, walltime)
+
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\torch\utils\tensorboard\writer.py", line 99, in add_event
+    self.event_writer.add_event(event)
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\summary\writer\event_file_writer.py", line 117, in add_event
+    self._async_writer.write(event.SerializeToString())
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\summary\writer\event_file_writer.py", line 212, in _check_worker_status
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\summary\writer\event_file_writer.py", line 178, in write
+    self._check_worker_status()
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\summary\writer\event_file_writer.py", line 212, in _check_worker_status
+    raise exception
+    raise exception
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1038, in _bootstrap_inner
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\summary\writer\event_file_writer.py", line 244, in run
+    self._run()
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\summary\writer\event_file_writer.py", line 275, in _run
+    self._record_writer.write(data)
+    self.run()  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\summary\writer\record_writer.py", line 40, in write
+    self._writer.write(header + header_crc + data + footer_crc)
+
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\compat\tensorflow_stub\io\gfile.py", line 775, in write
+    self.fs.append(self.filename, file_content, self.binary_mode)
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\compat\tensorflow_stub\io\gfile.py", line 167, in append
+    self._write(filename, file_content, "ab" if binary_mode else "a")
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\summary\writer\event_file_writer.py", line 244, in run
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\compat\tensorflow_stub\io\gfile.py", line 171, in _write
+    with io.open(filename, mode, encoding=encoding) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    self._run()
+FileNotFoundError: [Errno 2] No such file or directory: b'runs\\train\\exp18\\tensorboard\\events.out.tfevents.1755042360.acer-Nitro5.19212.0'
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\summary\writer\event_file_writer.py", line 275, in _run
+    self._record_writer.write(data)
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\summary\writer\record_writer.py", line 40, in write
+    self._writer.write(header + header_crc + data + footer_crc)
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\compat\tensorflow_stub\io\gfile.py", line 775, in write
+    self.fs.append(self.filename, file_content, self.binary_mode)
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\compat\tensorflow_stub\io\gfile.py", line 167, in append
+    self._write(filename, file_content, "ab" if binary_mode else "a")
+  File "C:\university\241-353\T.Fern\program\.venv\Lib\site-packages\tensorboard\compat\tensorflow_stub\io\gfile.py", line 171, in _write
+    with io.open(filename, mode, encoding=encoding) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: b'runs\\train\\exp18\\tensorboard\\events.out.tfevents.1755042360.acer-Nitro5.19212.0'

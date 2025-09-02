@@ -1,0 +1,6 @@
+names:
+  0: Protien
+  1: Vegetable
+  2: Carb
+path: .
+train: train.txt
